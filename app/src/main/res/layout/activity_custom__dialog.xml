@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+
+
+
+
+    tools:context="com.softgridtech.androiddialog.Custom_Dialog">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:background="@drawable/layout_bg"
+
+
+        >
+
+        <LinearLayout
+            android:id="@+id/linearlayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/brightnessTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Brightness:"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <SeekBar
+
+                android:id="@+id/brightnessSkbr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearlayout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearlayout1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/soundTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sound:       "
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <SeekBar
+
+                android:id="@+id/soundSkb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/linearlayout2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/configurationTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/configurationEt"
+
+
+                android:text="Configuration:"
+                android:textColor="@android:color/white"
+                android:textSize="20sp" />
+
+            <EditText
+
+                android:id="@+id/configurationEt"
+
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+
+
+                android:layout_toRightOf="@+id/configurationTv" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/loginbtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativelayout1"
+
+            android:layout_margin="10dp"
+
+
+            android:background="@drawable/layout_bg1"
+            android:padding="10dp"
+            android:text="Log in:"
+            android:textColor="@android:color/white" />
+
+
+        <TextView
+            android:id="@+id/resultsTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loginbtn"
+            android:layout_margin="5dp"
+            android:text="Result: "
+
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="40dp"
+
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:contentDescription="Close Button"
+        android:paddingRight="-20dp"
+        android:paddingTop="-20dp"
+        android:src="@drawable/download" />
+
+
+</RelativeLayout>
